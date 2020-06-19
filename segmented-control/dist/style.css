@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  cursor: default;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, .0);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #73B9FF;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+body, .select-control {
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+
+.container {
+  width: 100%;
+  padding: 4rem;
+  max-width: 90rem;
+  background: white;
+  border-radius: 1rem;
+  border: .3rem solid #DEDEDE;
+}
+
+.wrapper-control {
+  display: inline-flex;
+  align-items: center;
+  border: .5rem solid #5796ff;
+  border-radius: 1rem;
+  height: 7rem;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+  cursor: pointer;
+}
+
+.sort:nth-child(2) {
+  border-left: .5rem solid #5796ff;
+  border-right: .5rem solid #5796ff;
+}
+
+.sort.selected {
+  background: #5796ff;
+  color: white;
+}
+
+.select-wrapper {
+  display: none;
+  position: relative;
+}
+
+.select-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-1.2rem);
+  width: 0;
+  height: 0;
+  border-left: .5rem solid transparent;
+  border-right: .5rem solid transparent;
+  z-index: 2;
+
+  border-bottom: 1rem solid black;
+}
+
+.select-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(.2rem);
+  width: 0;
+  height: 0;
+  border-left: .5rem solid transparent;
+  border-right: .5rem solid transparent;
+  z-index: 2;
+
+  border-top: 1rem solid black;
+}
+
+.select-control {
+  width: 100%;
+  border-radius: 1rem;
+  border: .5rem solid #5796ff;
+  height: 7rem;
+  padding: 0 2rem;
+
+  -webkit-appearance: none;
+}
+
+@media screen and (max-width: 804px) {
+  .wrapper-control {
+    display: none;
+  }
+
+  .select-wrapper {
+    display: initial;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .select-control {
+    font-size: 1.6rem;
+  }
+}
