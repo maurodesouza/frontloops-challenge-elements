@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Progress navigation</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="steps">
+        <p class="step-1 active"><span>1</span>Choose a title</p>
+        <p class="step-2"><span>2</span>Choose a description</p>
+        <p class="step-3"><span>3</span>Choose a data</p>
+    </div>
+
+    <div class="overviews">
+
+      <div class="overview-step-1 active">
+          <h2>Choose a title</h2>
+          <button class="next">Submit title</button>
+      </div>
+
+      <div class="overview-step-2">
+          <h2>Choose a description content</h2>
+
+          <div>
+            <button class="back">Back</button>
+            <button class="next">Submit description</button>
+          </div>
+      </div>
+
+      <div class="overview-step-3">
+          <h2>Are you happy now ?</h2>
+          
+          <div>
+            <button class="back">No, go back</button>
+            <button class="next">Yes, go ahead</button>
+          </div>
+      </div>
+
+      <div class="overview-step-3">
+        <h2>Ok, we're done. Thanks for sending us your data!</h2>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

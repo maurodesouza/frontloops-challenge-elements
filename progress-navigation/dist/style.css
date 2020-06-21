@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: default;
+  outline: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #8E44AD;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body, button {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+button {
+  display: inline-block;
+  background: #EDEDEC;
+  border: none;
+  padding: 2rem 3rem;
+  max-width: 25rem;
+  transition: .2s;
+  cursor: pointer;
+}
+
+button + button {
+  margin-left: 1rem;
+}
+
+button:active {
+  transform: translateY(1rem);
+}
+
+button:hover {
+  background: #e6e5e5;
+}
+
+.container {
+  width: 100%;
+  max-width: 104.5rem;
+  height: 23rem;
+  background: white;
+  border-radius: 1rem;
+  padding: 4rem;
+  display: flex;
+}
+
+.steps {
+  height: 100%;
+  width: 100%;
+  max-width: 42rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  color: #757574;
+}
+
+.steps span {
+  display: inline-flex;
+  margin-right: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background: #F6F6F5;
+  border-radius: 10rem;
+  transition: .4s;
+}
+
+.steps p {
+  cursor: pointer;
+  transition: .4s;
+}
+
+.steps p * {
+  cursor: pointer;
+}
+
+.steps p.active span {
+  background: #2A7FB9;
+  color: white;
+}
+
+.steps p.active, .steps p:hover {
+  color: black;
+}
+
+.steps p:hover:not(.active) span{
+  color: black;
+  background: #eeeeee;
+}
+
+.overviews > div {
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.overviews > div.active {
+  display: flex;
+}
+
+@media screen and (max-width: 950px) {
+  button {
+    margin-top: 4rem;
+  }
+
+  .container {
+    height: initial;
+    flex-direction: column;
+  }
+
+  .overviews {
+    margin-top: 3rem;
+  }
+
+  .steps p + p {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 6px;
+  }
+}
