@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  cursor: default;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 100%;
+  background: #403D7C;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+body, button {
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  padding: .8rem 1.5rem;
+  border: 0;
+  background-color: #F0EEF0;
+  cursor: pointer;
+  transition: transform .4s;
+}
+
+button:active {
+  transform: translateY(1rem);
+  background: #e2e2e2;
+}
+
+.wrapper-control {
+  background: white;
+  margin-top: 10rem;
+  padding: 2rem;
+  border-radius: .5rem;
+  display: inline-block;
+}
+
+.side-menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 30rem;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-100%);
+  transition: .4s;
+}
+
+.side-menu-bg {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .6);
+  transition: .4s;
+}
+
+.side-menu p {
+  margin-bottom: 2rem;
+}
+
+.side-menu-bg.opened {
+  opacity: 1;
+  z-index: initial;
+}
+
+.side-menu-bg.opened .side-menu {
+  transform: translateX(0);
+}
+
+.menu-content {
+  display: none;
+}
+
+.menu-content.show {
+  display: initial;
+}
