@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  overflow: hidden;
+}
+
+body {
+  min-height: 100vh;
+  padding: 3rem;
+  background-color: #2B2C61;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  perspective: 2rem;
+}
+
+.card {
+  width: 50rem;
+  height: 50rem;
+  background-color: white;
+  border-radius: 1rem;
+  transition: transform .3s;
+}
