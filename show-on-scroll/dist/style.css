@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  padding: 0 3rem 3rem;
+}
+
+body::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #F0EEF0;
+}
+
+.card {
+  opacity: 0;
+  margin: 0 auto;
+  max-width: 80rem;
+  height: 50rem;
+  width: 100%;
+  background-color: #F0EEF0;
+  transition: opacity .4s;
+}
+
+.card:first-child {
+  margin-top: 100vh;
+}
+
+.card + .card {
+  margin-top: 2rem;
+}
+
+.card.show {
+  opacity: 1;
+}
