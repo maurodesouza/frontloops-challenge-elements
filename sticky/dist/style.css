@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 35rem;
+  background-color: #FAF9FA;
+  gap: 3rem;
+  padding: 3rem;
+}
+
+.content {
+  background: #F0EEF0;
+  height: 140rem;
+  grid-column: 2 / 3;
+}
+
+.red-box {
+  width: 5rem;
+  height: 5rem;
+  background-color: red;
+  margin: 3rem;
+}
+
+.sticky {
+  width: 20rem;
+  height: 15rem;
+  background: white;
+  border-radius: .5rem;
+  box-shadow: 0 0 .4rem rgba(0, 0, 0, .1);
+  margin-top: 10rem;
+}
+
+.small {
+  width: 10rem;
+  height: 14rem;
+  margin-top: 17rem;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right {
+  margin-right: auto;
+}
+
+.left {
+  margin-left: auto;
+}
