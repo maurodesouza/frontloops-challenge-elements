@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #2A2F3A;
+  overflow: hidden;
+}
+
+.card {
+  width: 23rem;
+  height: 23rem;
+  background-color: #F0EEF0;
+  border-radius: .5rem;
+  position: absolute;
+  top: 6rem;
+  left: 8rem;
+  cursor: move;
+}
