@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #DC634A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+body, input, button {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: 500;
+}
+
+.container {
+  width: 60rem;
+  height: 38rem;
+  background-color: white;
+  padding: 3rem 2.5rem 4rem;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  font-size: 1.8rem;
+  width: 100%;
+  padding-bottom: 3rem;
+  border: 0;
+  border-bottom: .1rem solid #D8D8D7;
+}
+
+input::placeholder {
+  color: black;
+}
+
+.wrapper-options {
+  height: 100%;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.check-all {
+  font-weight: bold;
+}
+
+.option, .check-all {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  background: transparent;
+  text-align: left;
+  border: 0;
+}
+
+.option {
+  margin-top: .5rem;
+}
+
+.option.selected, .check-all.selected {
+  background-color: #EDEDEC;
+}
