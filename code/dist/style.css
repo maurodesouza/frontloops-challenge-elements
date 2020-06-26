@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0 3rem;
+  background-color: #BC3C5A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body, button, input {
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color: #EDEDEC;
+  width: 11rem;
+  height: 6rem;
+  font-weight: 600;
+  font-size: 2rem;
+  border: 0;
+  cursor: pointer;
+}
+
+form {
+  background-color: white;
+  padding: 4rem 10rem;
+  text-align: center;
+  width: 70rem;
+  height: 30rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper-inputs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 6.8rem;
+  height: 6.8rem;
+  border: .3rem solid #D7D7D6;
+  text-align: center;
+}
+
+input + input {
+  border-left: 0;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input.current {
+  background-color: #F8F8F7;
+}
+
+.line {
+  display: block;
+  width: 2.5rem;
+  height: 0.3rem;
+  margin: 0 auto;
+  background-color: #D7D7D6;
+}
