@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Validation</title>
+</head>
+<body>
+  <form autocomplete="off" class="form">
+    <label for="name">
+      Name
+      <input class="input" type="text" id="name">
+    </label>
+
+    <label for="email">
+      Email
+      <input class="input" type="text" id="email">
+    </label>
+
+    <label for="password">
+      Password
+      <input class="input" type="password" id="password">
+    </label>
+
+    <label for="confirPassword">
+      Confirm password
+      <input class="input" type="password" id="confirmPassword">
+    </label>
+
+    <button type="submit">submit</button>
+  </form>
+
+  <!--
+    Build a script for form validation.
+    It should validate form on its submit and should support required fields, emails
+    and field confirmation (should check if the value of the linked field is the same).
+    If form is invalid it shouldn't be submitted and errors must be shown.
+  -->
+
+  <script src="main.js"></script>
+</body>
+</html>
