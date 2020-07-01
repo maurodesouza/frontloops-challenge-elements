@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #436FE8;
+  min-height: 100vh;
+}
+
+body, button, input {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: .5rem;
+  border: .1rem solid #A7B5DC;
+
+  padding: 3rem;
+  width: 100%;
+  max-width: 68rem;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+}
+
+input {
+  width: 100%;
+  height: 6.4rem;
+  border: 0;
+  border-bottom: .3rem solid #D7D7D6;
+}
+
+input:focus {
+  border-bottom-color: black;
+}
+
+button {
+  flex-shrink: 0;
+  width: 16rem;
+  margin-left: 3rem;
+  border: 0;
+  background: #eee;
+  cursor: pointer;
+}
+
+.boilings {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.boiling {
+  flex-shrink: 0;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10rem;
+  background-color: #fc8b3b;
+  color: white;
+
+  margin-bottom: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  animation: blink 1s infinite ease;
+
+  transition: .4s;
+}
+
+.boiling + .boiling {
+  margin-left: 1.5rem;
+}
+
+.boiling:nth-child(8n + 1) {
+  margin-left: 0;
+}
+
+@keyframes blink {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
