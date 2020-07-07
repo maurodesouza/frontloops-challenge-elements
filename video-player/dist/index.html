@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  <title>Video player</title>
+</head>
+<body>
+  <div class="container">
+      <div class="video-wrapper paused">
+        <span class="play-icon"><i class="fas fa-play"></i></span>
+        <video class="video">
+          <source src="video.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    <div class="controls">
+      <span class="back">Back 10s</span>
+      <span class="skip">Skip 10s</span>
+      <span class="reset">reset</span>
+
+      <div class="progress-bar">
+        <span class="progress"></span>
+      </div>
+    </div>
+  </div>
+
+  <!--
+    Build a video player that starts/stops playing by preview click.
+    It displays the progress bar for the video.
+    Video can be fast forwarded by 10 seconds in both directions and reset to the start.
+    You can get an example video here: https://frontloops.io/video/peru.mp4
+  -->
+
+  <script src="main.js"></script>
+</body>
+</html>

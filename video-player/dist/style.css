@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #bcb1e7;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.container {
+  overflow: hidden;
+  border-radius: .5rem;
+  max-width: 85rem;
+}
+
+.video-wrapper {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.video-wrapper.paused::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.video-wrapper .play-icon {
+  display: none;
+}
+
+.video-wrapper.paused .play-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid white;
+  border-radius: 10rem;
+}
+
+.video-wrapper .play-icon i {
+  position: relative;
+  left: 5px;
+  font-size: 4rem;
+  color: white;
+}
+
+.video {
+  display: block;
+  width: 100%;
+}
+
+.controls {
+  background-color: #3F306F;
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.controls span {
+  cursor: pointer;
+}
+
+.controls span:hover {
+  color: #e5dffd;
+}
+
+.controls span + span {
+  margin-left: 2.5rem;
+}
+
+.controls .progress-bar {
+  margin-left: 4rem;
+  flex: 1;
+  height: .7rem;
+  border-radius: 10rem;
+  background-color: rgba(255, 255, 255, .2);
+  position: relative;
+  overflow: hidden;
+}
+
+.controls .progress-bar .progress {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #e5dffd;
+}
