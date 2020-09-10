@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  cursor: none;
+  box-sizing: border-box;
+}
+
+.cursor {
+  position: absolute;
+  border-radius: 50%;
+  background: #E24133;
+}
+
+.ball-mark {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #E24133;
+
+  animation: closing 2s forwards;
+}
+
+@keyframes closing {
+  from {
+    border-width: 2px;
+    transform: scale(1);
+  } to {
+    border-width: 0px;
+    transform: scale(0);
+  }
+}
