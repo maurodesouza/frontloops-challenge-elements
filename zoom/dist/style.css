@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #CBD2DB;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+}
+
+.container > img {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  cursor: zoom-in;
+  border-radius: 5px;
+}
+
+.container .zoomed {
+  visibility: hidden;
+  position: relative;
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 20px rgba(150, 150, 150, .1);
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.container .zoomed img {
+  position: absolute;
+  top: 50% ;
+  left: 50%;
+  display: block;
+  width: 1500px;
+  border-radius: 5px;
+}
+
+.container.active .zoomed {
+  visibility: visible;
+}
