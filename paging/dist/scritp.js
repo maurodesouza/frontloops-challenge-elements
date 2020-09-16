@@ -35,21 +35,12 @@ const showCards = cards => {
 
   loadCardsButton.before(div);
 
-  if (page === 2) {
-    setTimeout(() => {
-      window.scrollTo({
-        behavior: "smooth",
-        top: 100,
-      });
-    }, 1000);
-
-    return;
-  }
-
-  document.body.scrollBy({
-    behavior: 'smooth',
-    top: 1000,
-  });
+  setTimeout(() => {
+    window.scrollTo({
+      behavior: "smooth",
+      top: 100,
+    });
+  }, 1000);
 }
 
 loadCardsButton.addEventListener('click', loadCards);
